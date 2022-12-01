@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>Logowanie</title>
+	<meta name="description" content="logowanie" />
+	<meta name="keywords" content="logowanie" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" /> <!-- Aby polskie znaki się poprawnie wyświetlały -->
+	<link rel="stylesheet" href="logowanie.css" type="text/css" /> <!-- Odniesienie do CSS -->
+	<link rel="stylesheet" href="animate.css" type="text/css" />
+
+	<link rel="Shortcut icon" href="logominiwhite.png" /> <!-- Ikona zakładki -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'> <!-- Ogólnym fontem strony jest "Lato", dostęp do tej czcionki jest możliwy dzięki firmie "Google" -->
+</head>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<body>
+
+<div class="container bounceInDown animated">
+
+	<div>
+		<img src="logo.png" alt="Logo strony" class="logo"/>
+	</div>
+	<div class="content">
+		<div class="title zoomInDown animated"> 
+			<b> Logowanie </b>
+		</div>
+		<div id="komunikat" class="kBlad zoomInDown animated">
+			Komunikat
+		</div>
+		<br/>
+
+		<div class="login zoomInDown animated"> 
+			Login (admin):
+		</div>
+		<div class="polelog zoomInDown animated">
+			<input type="text" id="login" placeholder="Podaj login" required> <!-- required-trzeba wypełnić dane pole -->
+		</div>
+		<br/><br/>
+
+		<div class="haslo zoomInDown animated"> 
+			Hasło (haslo):
+		</div>
+		<div class="polehaslo zoomInDown animated">
+			<input type="password" id="haslo" placeholder="Podaj hasło" maxlength="24" required>
+		</div>
+		<br/><br/>
+		<br/><br/>
+
+		<button onclick=" pokaz();" class="submit zoomInDown animated"> 
+			Zaloguj 
+		</button> <!--Przycisk z przypisaną funkcją -->
+		<br/><br/>
+		<br/><br/>
+
+	</div>
+	<div class="footer">
+		Logowanie &copy; Wszelkie prawa zastrzeżone
+	</div>
+
+	<script type="text/javascript" src="logowanie.js"></script> <!-- Odniesienie do JavaScript -->
+</body>
+</html>
